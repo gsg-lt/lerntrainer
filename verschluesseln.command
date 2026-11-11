@@ -33,7 +33,8 @@ echo "Aus dem Vault geholt: $n Trainer ($x per ausnahmen.txt übersprungen)"
 (( n > 0 )) || { echo "Keine Trainer gefunden."; fertig 1; }
 find originale -name '*.html' | sort | sed 's/^originale\//  /'
 echo
-read -q "?Diese Dateien verschlüsseln? (j/n) " || { echo; echo "Abgebrochen."; fertig; }
+read -k1 "ANTW?Diese Dateien verschlüsseln? (j/n) "; echo
+[[ $ANTW == [jJyY] ]] || { echo "Abgebrochen."; fertig; }
 echo
 
 # --- 2. Verschlüsseln ---
