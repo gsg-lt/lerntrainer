@@ -78,7 +78,7 @@ footer{{max-width:760px;margin:0 auto;padding:0 16px 32px;color:#888;font-size:.
 def main():
     n = 0
     for ordner in sorted(p for p in ORIG.iterdir() if p.is_dir()):
-        m = re.match(r"([a-z]+)-jg(\w+)$", ordner.name)
+        m = re.match(r"([a-z]+)(\d+\w*)$", ordner.name)
         if not m:
             continue
         eintraege = [eintrag(f) for f in ordner.glob("*.html") if f.name != "index.html"]

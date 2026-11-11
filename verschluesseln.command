@@ -23,7 +23,7 @@ for jg in "$VAULT"/*/(Vokabeltrainer|Lerntrainer)/Jg\ *(/); do
   case $fach in
     Englisch) k=en;; Spanisch) k=es;; Politik-Wirtschaft) k=powi;; *) k=${fach:l};;
   esac
-  ziel="originale/$k-jg${${jg:t}#Jg }"
+  ziel="originale/$k${${jg:t}#Jg }"
   for f in "$jg"/*.html(.); do
     if (( ${AUSN[(Ie)${f:t}]} )); then x+=1; continue; fi
     mkdir -p "$ziel" && cp "$f" "$ziel/" && n+=1
