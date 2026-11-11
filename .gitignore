@@ -1,0 +1,8 @@
+# Nur docs/ (verschlüsselt) geht ins Netz
+originale/
+node_modules/
+.staticrypt.json
+*passwort*
+*Passwort*
+*.odt
+.DS_Store
