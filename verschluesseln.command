@@ -62,6 +62,7 @@ cd ..
 (( rc == 0 )) || { echo "StatiCrypt-Fehler (Code $rc)."; fertig 1; }
 
 python3 qr.py || echo "Hinweis: QR-Codes konnten nicht erzeugt werden."
+[[ -f qr/Lerntrainer_QR-Codes.pdf ]] && cp qr/Lerntrainer_QR-Codes.pdf "/Users/zb/AI Helper/GSGB/2026-2027/Medien/Lerntrainer/" && echo "  QR-PDF in den Jahresplaner-Medienordner kopiert."
 echo; echo "Fertig: $(find docs -name '*.html' | wc -l | tr -d ' ') verschlüsselte Dateien in docs/."
 git status --short docs | head -40
 echo; echo "Hochladen mit:  git add -A docs && git commit -m 'Update' && git push"
