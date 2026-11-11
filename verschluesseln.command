@@ -61,6 +61,7 @@ unset PW PW2
 cd ..
 (( rc == 0 )) || { echo "StatiCrypt-Fehler (Code $rc)."; fertig 1; }
 
+python3 qr.py || echo "Hinweis: QR-Codes konnten nicht erzeugt werden."
 echo; echo "Fertig: $(find docs -name '*.html' | wc -l | tr -d ' ') verschlüsselte Dateien in docs/."
 git status --short docs | head -40
 echo; echo "Hochladen mit:  git add -A docs && git commit -m 'Update' && git push"

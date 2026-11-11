@@ -6,3 +6,4 @@ node_modules/
 *Passwort*
 *.odt
 .DS_Store
+qr/
