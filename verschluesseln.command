@@ -31,6 +31,7 @@ for jg in "$VAULT"/*/(Vokabeltrainer|Lerntrainer)/Jg\ *(/); do
 done
 echo "Aus dem Vault geholt: $n Trainer ($x per ausnahmen.txt übersprungen)"
 (( n > 0 )) || { echo "Keine Trainer gefunden."; fertig 1; }
+python3 uebersicht.py || { echo "Fehler beim Erzeugen der Übersichtsseiten."; fertig 1; }
 find originale -name '*.html' | sort | sed 's/^originale\//  /'
 echo
 read -k1 "ANTW?Diese Dateien verschlüsseln? (j/n) "; echo
