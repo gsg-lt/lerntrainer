@@ -21,3 +21,5 @@ Eigener Salt (`.staticrypt-geschichten.json`, lokal) und eigene Merk-Schlüssel
 `verschluesseln.command` lässt `docs/geschichten/` unangetastet.
 Hinweis: Die Geschichten enthalten den echten Vornamen von P02 — Ausnahme ausdrücklich
 von der Lehrkraft entschieden (12.11.26).
+
+QR-Codes dazu: `python3 geschichten_qr.py` → `04 Miscellaneous/Geschichten-Grundschule/QR/` (A4-PDF + PNG).
