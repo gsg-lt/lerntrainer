@@ -5,7 +5,7 @@
 # Trainer-Passwort und das Geschichten-Passwort auf einem Geraet nicht gegenseitig loeschen.
 cd "$(dirname "$0")"
 QUELLE="/Users/zb/AI Helper/GSGB/04 Miscellaneous/Geschichten-Grundschule"
-DATEIEN=(Die-Drachenschule_Lesebuch.html Die-Zauberdrachen_Lesebuch.html Die-Reise-zur-Windharfe_Lesebuch.html)
+DATEIEN=(Das-Drachenkueken_Lesebuch.html Die-Drachenschule_Lesebuch.html Die-Zauberdrachen_Lesebuch.html Die-Reise-zur-Windharfe_Lesebuch.html)
 fertig(){ read -k1 "?Taste drücken …"; exit ${1:-0}; }
 
 rm -rf originale_geschichten && mkdir -p originale_geschichten
@@ -30,6 +30,7 @@ a.k:hover{border-color:#2f7d8c}
 a.k span{font-size:2.2rem}
 </style></head><body><main>
 <h1>🐉 Drachengeschichten</h1><p class="sub">Such dir eine Geschichte aus.</p>
+<a class="k" href="Das-Drachenkueken_Lesebuch.html"><span>🐣</span>Das Drachenküken von Wolkenhain</a>
 <a class="k" href="Die-Drachenschule_Lesebuch.html"><span>🏫</span>Die Drachenschule von Wolkenhain</a>
 <a class="k" href="Die-Zauberdrachen_Lesebuch.html"><span>✨</span>Die Zauberdrachen von Wolkenhain</a>
 <a class="k" href="Die-Reise-zur-Windharfe_Lesebuch.html"><span>🎶</span>Die Reise zur Windharfe</a>
