@@ -7,3 +7,5 @@ node_modules/
 *.odt
 .DS_Store
 qr/
+originale_geschichten/
+.staticrypt-geschichten.json

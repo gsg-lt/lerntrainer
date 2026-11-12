@@ -44,7 +44,7 @@ read -s "PW2?Passwort wiederholen: "; echo
 [[ "$PW" != "$PW2" ]] && { echo "Passwörter stimmen nicht überein."; fertig 1; }
 [[ -z "$PW" ]] && { echo "Leeres Passwort."; fertig 1; }
 
-find docs -mindepth 1 ! -name .gitkeep -delete
+find docs -mindepth 1 -maxdepth 1 ! -name .gitkeep ! -name geschichten -exec rm -rf {} +
 cd originale
 STATICRYPT_PASSWORD="$PW" npx --prefix .. staticrypt * -r -d ../docs --remember 30 \
   --config ../.staticrypt.json \
