@@ -9,7 +9,8 @@ BASIS = "https://gsg-lt.github.io/lerntrainer/geschichten/"
 ZIEL = Path("/Users/zb/AI Helper/GSGB/04 Miscellaneous/Geschichten-Grundschule/QR")
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 AK, AKD, LINIE = "#2f7d8c", "#1d4f59", "#cfe0ea"
-GESCH = [("Das-Drachenkueken_Lesebuch.html", "Das Drachenküken von Wolkenhain", "🐣"),
+GESCH = [("Ferien-in-Moewenbucht_Lesebuch.html", "Ferien in Möwenbucht", "🏖️"),
+         ("Das-Drachenkueken_Lesebuch.html", "Das Drachenküken von Wolkenhain", "🐣"),
          ("Die-Drachenschule_Lesebuch.html", "Die Drachenschule von Wolkenhain", "🏫"),
          ("Die-Zauberdrachen_Lesebuch.html", "Die Zauberdrachen von Wolkenhain", "✨"),
          ("Die-Reise-zur-Windharfe_Lesebuch.html", "Die Reise zur Windharfe", "🎶")]
@@ -32,13 +33,13 @@ body{{margin:0;font-family:Verdana,Geneva,sans-serif;color:#1B1F26;background:#f
 .seite{{border-top:6px solid {AK};padding-top:8mm}}
 h1{{margin:0 0 8mm;font-size:26pt;color:{AKD};text-align:center}}
 .haupt{{text-align:center;border:1px solid {LINIE};border-radius:4mm;padding:8mm}}
-.haupt .qr{{width:62mm;height:62mm}}
+.haupt .qr{{width:55mm;height:55mm}}
 .lbl{{font-size:15pt;font-weight:bold;color:{AKD};margin:4mm 0 2mm}}
 .url{{font-size:10pt;margin:0 0 2mm}}.hinweis{{font-size:10pt;color:#555;margin:0}}
 h2{{font-size:12pt;color:{AKD};margin:6mm 0 3mm;border-bottom:1px solid {LINIE};padding-bottom:2mm}}
-.raster{{display:grid;grid-template-columns:repeat(2,1fr);gap:5mm}}
+.raster{{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}}
 .k{{border:1px solid {LINIE};border-radius:3mm;padding:4mm;text-align:center}}
-.k .qr{{width:38mm;height:38mm;display:block;margin:0 auto 3mm}}
+.k .qr{{width:36mm;height:36mm;display:block;margin:0 auto 3mm}}
 .t{{font-size:10pt;font-weight:bold;color:{AKD}}}
 </style></head><body><section class="seite">
 <h1>🐉 Drachengeschichten</h1>
