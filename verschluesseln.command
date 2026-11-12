@@ -55,7 +55,7 @@ STATICRYPT_PASSWORD="$PW" npx --prefix .. staticrypt * -r -d ../docs --remember 
   --template-remember "Passwort 30 Tage merken" \
   --template-error "Falsches Passwort – bitte noch einmal." \
   --template-toggle-show "Passwort anzeigen" \
-  --template-toggle-hide "Passwort verbergen" >/dev/null
+  --template-toggle-hide "Passwort verbergen"
 rc=$?
 unset PW PW2
 cd ..
